@@ -23,7 +23,7 @@ public class ApiTest {
 		 ResponseBody<?> verifying=responsive.getBody();
 		String converts= verifying.asString();
 		Assert.assertEquals(converts.contains("Funke"), true);
-		File it=new File("C:\\Users\\jerry\\eclipse-workspace\\20369MD_BootCamp_RestAssured\\src\\test\\java\\RestAssured\\Automation.jason");
+		File it=new File("C:\\Users\\jerry\\git\\repository6\\20369MD_BootCamp_RestAssured\\src\\test\\java\\RestAssured\\Automation.jason");
 		Response gt= given().contentType(ContentType.JSON).body(it).post("https://reqres.in/api/users?page=2");
 		gt.prettyPrint();
 		
